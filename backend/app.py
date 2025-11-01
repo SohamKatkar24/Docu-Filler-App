@@ -10,7 +10,7 @@ from docxtpl import DocxTemplate
 # --- App Setup ---
 app = Flask(__name__)
 # Allow requests from our React frontend (which will run on http://localhost:3000)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://docu-filler-qk4hne7rv-soham-katkars-projects.vercel.app"]}})
 
 # --- Constants ---
 UPLOAD_FOLDER = 'uploads'
